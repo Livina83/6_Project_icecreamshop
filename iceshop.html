@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./iceshop.css" />
+  <title>BALLS OF GLORY!</title>
+  <script src="./iceshop.js"> </script>
+</head>
+
+<body>
+  <!-- main container -->
+  <main class="maincontainer">
+    <!-- titel/welkom -->
+    <div class="container1">
+      <h1>BALLS OF GLORY!</h1>
+    </div>
+    <!-- titel/welkom -->
+
+    <!-- cone/cup -->
+
+    <div class="container2">
+
+      <form action="/action_page.php">
+
+        <h3>I WANT ICE-CREAM!</h3>
+        <p>- WE USE REUSABLE CUPS OR YOU CAN BRING YOUR OWN CUP -</p>
+
+        <div id="radiobuttons">
+        <input type="radio" id="cone" name="box" value="CONE">
+        <label for="cone">CONE</label>
+        <input type="radio" id="cup" name="box" value="CUP">
+        <label for="cup">CUP</label>
+        <input type="radio" id="none" name="box" value="NONE">
+        <label for="none">NONE</label>
+      </form>
+    </div>
+      <!-- cone/cup -->
+
+      <!-- flavours -->
+      <div class="container3">
+        <h3>CHOOSE YOUR FLAVOUR! (MAX. 3 SCOOPS)</h3>
+      </div>
+
+
+
+      <div class="container4">
+        <section class="Flavours">
+
+          <label <label for="input1">VANILLA!</label>
+          <input type="number" id="input1" name="input1" min="0" max="3"><br>
+
+          <label for="input2">CHOCOLATE!</label>
+          <input type="number" id="input2" name="input2" min="0" max="3"><br>
+
+          <label for="input3">STRAWBERRY!</label>
+          <input type="number" id="input3" name="input3" min="0" max="3"><br>
+        </section>
+
+          TOTAL SCOOPS: <span id="total">0</span><br>
+
+          <span id="error-message"></span>
+
+          <div class="conewrapper">
+            <img src="./images/cone3.svg" id="cone3" class="coneimg3 shower" alt="cone3">
+
+
+          </div>
+<!-- flavours -->
+
+
+
+
+          <!-- reset/finish -->
+          <div class="container5">
+            <form id="myReset">
+              <button class="button reset" onclick="myfunction()" value="RESET">
+                RESET ME
+              </button>
+            </form>
+            <button class="button finished" onclick="BF()">FINISHED!</button>
+          </div>
+          <!-- reset/finish -->
+
+          <div class="container6">
+            <h3>CONE 1€ | CUP 1€ | SCOOP 1€</h3>
+
+          </div>
+
+
+  </main>
+
+  <!-- main container -->
+  <a id="mail" href="mailto: livina.stockmans@gmail.com">©Livina Stockmans 2023 All Rights Reserved</a>
+
+
+
+
+
+
+
+  <!-- main container -->
+</body>
+
+</html>
