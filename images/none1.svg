@@ -5,12 +5,11 @@
 <style type="text/css">
 	.st0{fill:#E17559;}
 	.st1{fill:#EEC2DB;}
-	.st2{fill:#C4E5CB;}
-	.st3{fill:#FCFFBC;}
-	.st4{fill:#A8D9EA;}
-	.st5{fill:#FFFFFF;}
-	.st6{font-family:'Verdana-Bold';}
-	.st7{font-size:19.161px;}
+	.st2{fill:#FCFFBC;}
+	.st3{fill:#A8D9EA;}
+	.st4{fill:#FFFFFF;}
+	.st5{font-family:'Verdana-Bold';}
+	.st6{font-size:19.161px;}
 </style>
 <g id="Layer_3">
 	<g>
@@ -31,21 +30,19 @@
 					c1.6,0.9,0.7,2.2-0.2,3.7l-19.6,34C95.5,73.8,94.9,75.1,93.3,74.2z"/>
 			</g>
 		</g>
-		<path class="st2" d="M57.4,110.4L57.4,110.4c-3.3,0.8-6.7-1.2-7.5-4.4L26.2,12.7c-0.8-3.3,1.2-6.7,4.4-7.5l0,0
-			c3.3-0.8,6.6,1.2,7.5,4.4l23.8,93.2C62.7,106.2,60.7,109.5,57.4,110.4z"/>
 	</g>
 </g>
-<circle class="st3" cx="70" cy="99" r="49.4"/>
+<circle class="st2" cx="70" cy="99" r="49.4"/>
 <g id="Layer_1_00000064324470331054618790000016862860859617910682_">
 </g>
 <g>
 	<g>
-		<circle class="st4" cx="70.1" cy="105.3" r="21"/>
+		<circle class="st3" cx="70.1" cy="105.3" r="21"/>
 	</g>
-	<text transform="matrix(1 0 0 1 56.4967 112.2371)" class="st5 st6 st7">1€</text>
+	<text transform="matrix(1 0 0 1 56.4967 112.2371)" class="st4 st5 st6">1€</text>
 </g>
 <g id="Layer_3_00000003078289997964298110000011554728595952969368_">
-	<path class="st3" d="M81.8,82.9c2.7,12.2-0.9,20.7-5.3,16.4c-3.2-3.2,3.1-14.9-6.5-13.9c-1.1,0.1,2.2,9.9-2.8,8.3
+	<path class="st2" d="M81.8,82.9c2.7,12.2-0.9,20.7-5.3,16.4c-3.2-3.2,3.1-14.9-6.5-13.9c-1.1,0.1,2.2,9.9-2.8,8.3
 		C62.7,92.2,65,83,62.2,83"/>
 </g>
 </svg>

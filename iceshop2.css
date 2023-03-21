@@ -40,11 +40,11 @@ body {
 }
 
 #radiobuttons {
-  border: solid 2px red;
   padding: 15px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid red;
 }
 
 .container3 {
@@ -53,26 +53,23 @@ body {
 
 .container4 {
   text-align: center;
-  border: solid 2px red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
 }
 
 .container5 {
   padding-top: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  border: solid 2px red;
 }
 
 .container6 {
   padding-top: 2rem;
 }
 
-#mail {
-  color: rgb(70, 70, 70);
-}
 .conewrapper {
-  width: 30rem;
+  width: auto;
   height: 25rem;
   margin-top: 3rem;
   display: flex;
@@ -81,10 +78,25 @@ body {
 }
 .coneimg3 {
   padding-left: 3rem;
-  width: 40%;
+  width: 60%;
   height: auto;
 }
 
+.cupimg3 {
+  padding-left: 3rem;
+  width: 60%;
+  height: auto;
+}
+
+.noneimg3 {
+  padding-left: 3rem;
+  width: 80%;
+  height: auto;
+}
 .shower {
   display: none;
+}
+
+#mail {
+  color: rgb(70, 70, 70);
 }

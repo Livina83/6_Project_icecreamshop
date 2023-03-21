@@ -1,10 +1,23 @@
 function calculateTotal() {
-  const vanilla = parseInt(document.getElementById("vanilla").value) || 0;
-  const chocolate = parseInt(document.getElementById("chocolate").value) || 0;
-  const strawberry = parseInt(document.getElementById("strawberry").value) || 0;
+  let orderPlaced = false; // set to false initially
+  const getValue = (id) => parseInt(document.getElementById(id).value) || 0;
+  const [vanilla, chocolate, strawberry] = [
+    "vanilla",
+    "chocolate",
+    "strawberry",
+  ].map(getValue);
 
-  const cone3 = document.getElementById("cone3");
-  const coneRB = document.getElementById("cone");
+  const [cone1, cone2, cone3, coneRB] = ["cone1", "cone2", "cone3", "cone"].map(
+    (id) => document.getElementById(id)
+  );
+
+  const [cup1, cup2, cup3, cupRB] = ["cup1", "cup2", "cup3", "cup"].map((id) =>
+    document.getElementById(id)
+  );
+
+  const [none1, none2, none3, noneRB] = ["none1", "none2", "none3", "none"].map(
+    (id) => document.getElementById(id)
+  );
 
   const totalScoops = vanilla + chocolate + strawberry;
   if (totalScoops > 3) {
@@ -12,16 +25,12 @@ function calculateTotal() {
     return;
   }
 
-  const selectedFlavors = [];
-  if (vanilla > 0) {
-    selectedFlavors.push(vanilla + " scoop(s) of vanilla");
-  }
-  if (chocolate > 0) {
-    selectedFlavors.push(chocolate + " scoop(s) of chocolate");
-  }
-  if (strawberry > 0) {
-    selectedFlavors.push(strawberry + " scoop(s) of strawberry");
-  }
+  const selectedFlavors = [vanilla, chocolate, strawberry]
+    .filter((flavor) => flavor > 0)
+    .map(
+      (flavor, index) =>
+        `${flavor} scoop(s) of ${["vanilla", "chocolate", "strawberry"][index]}`
+    );
 
   const flavorList = document.getElementById("flavorList");
   flavorList.innerHTML = "";
@@ -33,8 +42,11 @@ function calculateTotal() {
   }
 
   document.getElementById("total").value = totalScoops;
-  if (total == 3 && coneRB.checked) {
-    console.warn("hallo", total);
-    cone3.style.display = "block";
+  if (coneRB.checked) {
+    document.getElementById("cone" + totalScoops).style.display = "block";
+  } else if (cupRB.checked) {
+    document.getElementById("cup" + totalScoops).style.display = "block";
+  } else if (noneRB.checked) {
+    document.getElementById("none" + totalScoops).style.display = "block";
   }
 }
