@@ -1,126 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./iceshop2.css" />
     <title>BALLS OF GLORY!</title>
-    <script src="./iceshop2.js"> </script>
-</head>
+    <script src="./iceshop2.js"></script>
+  </head>
 
-<body>
+  <body>
     <!-- main container -->
     <main class="maincontainer">
-        <!-- titel/welkom -->
+      <img src="./images/BG_ice.svg" alt="bgdrip" />
+      <div class="bgdripping"></div>
+      <!-- titel/welkom -->
+
+      <div class="wrapper">
         <div class="container1">
-            <h1>BALLS OF GLORY!</h1>
+          <h1 id="brand">Balls Of Glory!</h1>
+          <h2>I WANT ICE-CREAM!</h2>
         </div>
         <!-- titel/welkom -->
 
         <!-- cone/cup -->
 
         <div class="container2">
+          <form action="/action_page.php">
+            <h4>CONE 1€ | CUP 1€ | SCOOP 1€</h4>
+            <p>- WE USE REUSABLE CUPS OR YOU CAN BRING YOUR OWN CUP -</p>
 
-            <form action="/action_page.php">
+            <div id="radiobuttons">
+              <input type="radio" id="cone" name="box" value="CONE" />
+              <label for="cone">CONE</label>
 
-                <h3>I WANT ICE-CREAM!</h3>
-                <p>- WE USE REUSABLE CUPS OR YOU CAN BRING YOUR OWN CUP -</p>
+              <input type="radio" id="cup" name="box" value="CUP" />
+              <label for="cup">CUP</label>
 
-                <div id="radiobuttons">
-                    <input type="radio" id="cone" name="box" value="CONE">
-                    <label for="cone">CONE</label>
-                    <input type="radio" id="cup" name="box" value="CUP">
-                    <label for="cup">CUP</label>
-                    <input type="radio" id="none" name="box" value="NONE">
-                    <label for="none">NONE</label>
-            </form>
+              <input type="radio" id="none" name="box" value="NONE" />
+              <label for="none">NONE</label>
+            </div>
+          </form>
         </div>
         <!-- cone/cup -->
 
         <!-- flavours -->
         <div class="container3">
-            <h3>CHOOSE YOUR FLAVOUR! (MAX. 3 SCOOPS)</h3>
+          <h3>CHOOSE YOUR FLAVOUR!</h3>
+          <p>MAX. 3 SCOOPS!</p>
         </div>
-
-
 
         <div class="container4">
+          <section class="flavours">
+            <form>
+              <label for="vanilla">VANILLA!</label>
+              <input
+                type="number"
+                id="vanilla"
+                class="quantity"
+                name="vanilla"
+                min="0"
+                max="3"
+              /><br />
 
-            <section class="Flavours">
-                <form>
-                    <label for="vanilla">VANILLA!</label>
-                    <input type="number" id="vanilla" name="vanilla" min="0" max="3" /><br />
+              <label for="chocolate">CHOCOLATE!</label>
+              <input
+                type="number"
+                id="chocolate"
+                class="quantity"
+                name="chocolate"
+                min="0"
+                max="3"
+              /><br />
 
-                    <label for="chocolate">CHOCOLATE!</label>
-                    <input type="number" id="chocolate" name="chocolate" min="0" max="3" /><br />
+              <label for="strawberry">STRAWBERRY!</label>
+              <input
+                type="number"
+                id="strawberry"
+                class="quantity"
+                name="strawberry"
+                min="0"
+                max="3"
+              /><br />
 
-                    <label for="strawberry">STRAWBERRY!</label>
-                    <input type="number" id="strawberry" name="strawberry" min="0" max="3" /><br />
-
-                    <label for="total">TOTAL SCOOPS!</label>
-                    <input type="text" id="total" name="total" readonly /><br />
-
-                    <button type="button" onclick="calculateTotal();">Finished!</button>
-                    <div id="flavorList"></div>
-                </form>
-
-            </section>
-
-            <div class="conewrapper">
-                <img src="./images/cone3.svg" id="cone3" class="coneimg3 shower" alt="cone3">
-                <img src="./images/cone2.svg" id="cone2" class="coneimg3 shower" alt="cone2">
-                <img src="./images/cone1.svg" id="cone1" class="coneimg3 shower" alt="cone1">
-                <img src="./images/cup3.svg" id="cup3" class="cupimg3 shower" alt="cup3">
-                <img src="./images/cup2.svg" id="cup2" class="cupimg3 shower" alt="cup2">
-                <img src="./images/cup1.svg" id="cup1" class="cupimg3 shower" alt="cup1">
-                <img src="./images/none3.svg" id="none3" class="noneimg3 shower" alt="none3">
-                <img src="./images/none2.svg" id="none2" class="noneimg3 shower" alt="none2">
-                <img src="./images/none1.svg" id="none1" class="noneimg3 shower" alt="none1">
-
-            </div>
-
-          
-
-            
-
-        </div>
-
-
-
-
-
-        <!-- flavours -->
-
-        <!-- reset/finish -->
-        <div class="container5">
-            <form id="myReset">
-                <button class="button reset" onclick="myfunction()" value="RESET">
-                    RESET ME
-                </button>
+              <input
+                placeholder="TOTAL SCOOPS!"
+                type="text"
+                id="total"
+                name="total"
+                readonly
+              /><br />
             </form>
+          </section>
+
+          <section>
+            <form>
+              <button class="button" type="button" onclick="calculateTotal();">
+                FINISHED!
+              </button>
+              <div id="flavorList"></div>
+            </form>
+
+            <form id="myReset">
+              <button class="button" onclick="myfunction()" value="RESET">
+                ORDER AGAIN!
+              </button>
+            </form>
+          </section>
+
+          <div class="conewrapper">
+            <img
+              src="./images/cone3.svg"
+              id="cone3"
+              class="coneimg3 shower"
+              alt="cone3"
+            />
+            <img
+              src="./images/cone2.svg"
+              id="cone2"
+              class="coneimg3 shower"
+              alt="cone2"
+            />
+            <img
+              src="./images/cone1.svg"
+              id="cone1"
+              class="coneimg3 shower"
+              alt="cone1"
+            />
+            <img
+              src="./images/cup3.svg"
+              id="cup3"
+              class="cupimg3 shower"
+              alt="cup3"
+            />
+            <img
+              src="./images/cup2.svg"
+              id="cup2"
+              class="cupimg3 shower"
+              alt="cup2"
+            />
+            <img
+              src="./images/cup1.svg"
+              id="cup1"
+              class="cupimg3 shower"
+              alt="cup1"
+            />
+            <img
+              src="./images/none3.svg"
+              id="none3"
+              class="noneimg3 shower"
+              alt="none3"
+            />
+            <img
+              src="./images/none2.svg"
+              id="none2"
+              class="noneimg3 shower"
+              alt="none2"
+            />
+            <img
+              src="./images/none1.svg"
+              id="none1"
+              class="noneimg3 shower"
+              alt="none1"
+            />
+          </div>
         </div>
-        <!-- reset/finish -->
-
-        <div class="container6">
-            <h3>CONE 1€ | CUP 1€ | SCOOP 1€</h3>
-
-        </div>
-
-
+      </div>
+      <!-- flavours -->
     </main>
 
     <!-- main container -->
-    <a id="mail" href="mailto: livina.stockmans@gmail.com">©Livina Stockmans 2023 All Rights Reserved</a>
-
-
-
-
-
-
-
-    <!-- main container -->
-</body>
-
+    <a id="mail" href="mailto: livina.stockmans@gmail.com"
+      >©Livina Stockmans 2023 All Rights Reserved</a
+    >
+  </body>
 </html>

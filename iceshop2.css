@@ -1,100 +1,122 @@
+@font-face {
+  font-family: "Nerko";
+  src: url("./fonts/NerkoOne-Regular.ttf") format("truetype");
+}
 body {
-  background-image: url("./images/sprinkles.svg");
-  background-repeat: repeat;
+  background: url("./images/sprinkles.svg") repeat;
   font-family: Verdana, sans-serif;
-  color: rgb(70, 70, 70);
+  color: rgb(106, 105, 128);
   text-align: center;
-  padding: 0rem 4rem;
+  padding: 0 4rem;
 }
-
-.button {
-  background-color: rgb(253, 248, 239); /* Green */
-  border: none;
-  color: rgb(92, 92, 92);
-  padding: 35px;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 2rem 4rem;
-  cursor: pointer;
-  border-radius: 4rem;
-}
-
 .maincontainer {
-  margin: 10rem;
+  margin: 0 auto;
+  max-width: 105rem;
+  background-image: url("bgdripping");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  padding: 3rem;
+  position: relative;
+}
+/*.maincontainer {
+  margin: 8rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   background: rgba(188, 185, 216, 0.8);
   border-radius: 3rem;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
+}*/
+.wrapper {
+  border: solid 2px rgb(85, 255, 0);
+  position: absolute;
+  top: 8rem;
+  left: 14rem;
+}
+
+#brand {
+  font-family: "Nerko";
+  font-size: 7.5rem;
+  color: rgb(120, 118, 146);
 }
 
 .container1 {
-  padding-top: 2rem;
+  padding-top: 4rem;
+  border: solid 2px red;
 }
 
 .container2 {
-  padding-top: 2rem;
-}
-
-#radiobuttons {
-  padding: 15px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid red;
-}
-
-.container3 {
-  padding-top: 3rem;
+  margin-top: 1rem;
 }
 
 .container4 {
-  text-align: center;
+  padding: 0.5rem;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  text-align: center;
 }
 
-.container5 {
-  padding-top: 3rem;
+.flavours {
+  text-align: right;
+  width: 10rem;
+  line-height: 2.2rem;
 }
 
+.container3,
+.container5,
 .container6 {
   padding-top: 2rem;
 }
 
 .conewrapper {
   width: auto;
-  height: 25rem;
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.coneimg3 {
-  padding-left: 3rem;
-  width: 60%;
-  height: auto;
+  height: 28rem;
+  margin-top: 2rem;
 }
 
-.cupimg3 {
-  padding-left: 3rem;
-  width: 60%;
-  height: auto;
+.quantity {
+  border: solid 1px rgb(253, 248, 239);
+  width: 1.6rem;
+  height: 1.1rem;
+  font-weight: lighter;
+  border-radius: 2rem;
+  text-align: center;
+  background-color: rgb(253, 248, 239);
+  color: rgb(106, 105, 128);
+}
+#total {
+  font-weight: lighter;
+  border-radius: 2rem;
+  text-align: center;
+  border: solid 1px rgb(253, 248, 239);
+  background-color: rgb(253, 248, 239);
 }
 
-.noneimg3 {
-  padding-left: 3rem;
-  width: 80%;
-  height: auto;
-}
 .shower {
   display: none;
+}
+
+.button {
+  background-color: rgb(253, 248, 239);
+  border: none;
+  color: rgb(106, 105, 128);
+
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  cursor: pointer;
+  border-radius: 4rem;
+  min-width: 180px;
+  height: 50px;
+  font-size: 16px;
+}
+
+#radiobuttons {
+  margin-top: 2rem;
 }
 
 #mail {

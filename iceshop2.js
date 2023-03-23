@@ -50,3 +50,8 @@ function calculateTotal() {
     document.getElementById("none" + totalScoops).style.display = "block";
   }
 }
+
+//function test(){
+//const hide = document.querySelector(.conewrapper)
+//hide.setAttribute('disabled', '')
+//}
