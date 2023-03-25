@@ -38,8 +38,18 @@ function calculateTotal() {
     const listItems = selectedFlavors.map(function (flavor) {
       return "<li>" + flavor + "</li>";
     });
-    flavorList.innerHTML = "<ul>" + listItems.join("") + "</ul>";
+    flavorList.innerHTML =
+      "<ul class='no-bullets'>" + listItems.join("") + "</ul>";
   }
+
+  /*const flavorList = document.getElementById("flavorList");
+  flavorList.innerHTML = "";
+  if (selectedFlavors.length > 0) {
+    const listItems = selectedFlavors.map(function (flavor) {
+      return "<li>" + flavor + "</li>";
+    });
+    flavorList.innerHTML = "<ul>" + listItems.join("") + "</ul>";
+  }*/
 
   document.getElementById("total").value = totalScoops;
   if (coneRB.checked) {
@@ -50,8 +60,3 @@ function calculateTotal() {
     document.getElementById("none" + totalScoops).style.display = "block";
   }
 }
-
-//function test(){
-//const hide = document.querySelector(.conewrapper)
-//hide.setAttribute('disabled', '')
-//}

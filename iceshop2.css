@@ -1,56 +1,101 @@
 @font-face {
   font-family: "Nerko";
-  src: url("./fonts/NerkoOne-Regular.ttf") format("truetype");
+  src: url("./fonts2/NerkoOne-Regular.ttf") format("truetype");
 }
+
 body {
-  background: url("./images/sprinkles.svg") repeat;
+  background-image: url("./images/sprinkles.svg");
+  /*background-repeat: repeat;*/
   font-family: Verdana, sans-serif;
   color: rgb(106, 105, 128);
   text-align: center;
-  padding: 0 4rem;
+  padding: 0rem 4rem;
 }
-.maincontainer {
-  margin: 0 auto;
-  max-width: 105rem;
-  background-image: url("bgdripping");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  padding: 3rem;
+
+.bgice {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5rem;
 }
+
+.containerall {
+  position: absolute;
+}
+
 /*.maincontainer {
-  margin: 8rem;
+  margin: 10rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   background: rgba(188, 185, 216, 0.8);
   border-radius: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }*/
-.wrapper {
-  border: solid 2px rgb(85, 255, 0);
-  position: absolute;
-  top: 8rem;
-  left: 14rem;
-}
 
 #brand {
   font-family: "Nerko";
-  font-size: 7.5rem;
+  font-size: 6rem;
   color: rgb(120, 118, 146);
 }
 
+.button {
+  background-color: rgb(253, 248, 239);
+  border: none;
+  color: rgb(106, 105, 128);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  cursor: pointer;
+  border-radius: 4rem;
+  min-width: 180px;
+  height: 45px;
+  font-size: 16px;
+  list-style: none;
+}
+
+ul.no-bullets {
+  list-style: none;
+}
+ul.no-bullets li {
+  text-align: left;
+}
+
 .container1 {
-  padding-top: 4rem;
-  border: solid 2px red;
+  padding-top: 7rem;
 }
 
 .container2 {
   margin-top: 1rem;
 }
+.flavours {
+  text-align: right;
+  width: 10rem;
+  line-height: 2.2rem;
+}
 
+#total {
+  font-weight: lighter;
+  border-radius: 2rem;
+  text-align: center;
+  border: solid 1px rgb(253, 248, 239);
+  background-color: rgb(253, 248, 239);
+}
+
+#radiobuttons {
+  padding: 15px 0;
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;*/
+}
+
+.container3 {
+  padding-top: 2rem;
+}
 .container4 {
   padding: 0.5rem;
   display: flex;
@@ -59,22 +104,27 @@ body {
   align-items: center;
 }
 
-.flavours {
-  text-align: right;
-  width: 10rem;
-  line-height: 2.2rem;
-}
-
-.container3,
-.container5,
-.container6 {
-  padding-top: 2rem;
-}
-
 .conewrapper {
   width: auto;
-  height: 28rem;
+
   margin-top: 2rem;
+}
+.coneimg3 {
+  padding-left: 3rem;
+  width: 15vh;
+}
+
+.cupimg3 {
+  padding-left: 3rem;
+  width: 20vh;
+}
+
+.noneimg3 {
+  padding-left: 3rem;
+  width: 15vh;
+}
+.flavorlist {
+  list-style: none;
 }
 
 .quantity {
@@ -87,36 +137,8 @@ body {
   background-color: rgb(253, 248, 239);
   color: rgb(106, 105, 128);
 }
-#total {
-  font-weight: lighter;
-  border-radius: 2rem;
-  text-align: center;
-  border: solid 1px rgb(253, 248, 239);
-  background-color: rgb(253, 248, 239);
-}
-
 .shower {
   display: none;
-}
-
-.button {
-  background-color: rgb(253, 248, 239);
-  border: none;
-  color: rgb(106, 105, 128);
-
-  text-align: center;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-top: 3rem;
-  cursor: pointer;
-  border-radius: 4rem;
-  min-width: 180px;
-  height: 50px;
-  font-size: 16px;
-}
-
-#radiobuttons {
-  margin-top: 2rem;
 }
 
 #mail {
